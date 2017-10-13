@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MyTeam Rota</title>
+<style>
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 90%;
+	min-width: 440px;
+	background-image: url("icons/gradient.svg");
+	background-color: #F0FFFF;
+}
+
+#messageDiv {
+	font-size: 90%;
+	font-style: italic;
+	display: none;
+}
+
+#translatorsDiv {
+	display: none;
+}
+
+#footer {
+	font-size: 80%;
+}
+
+#helpDiv {
+	font-size: 80%;
+	display: none;
+}
+
+#translatorsTable {
+	text-align: left;
+	border-spacing: 12px;
+}
+
+#messageTable {
+	text-align: left;
+	border-spacing: 5px;
+}
+
+td {
+	white-space: nowrap;
+}
+
+a {
+	text-decoration: none;
+	color: #1094d2;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+</style>
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="popup.js"></script>
+</head>
+<body>
+
+	<div id="messageDiv">
+		<table>
+			<tr>
+				<td><img id="messageIcon" style="vertical-align: middle;"></td>
+				<td><p id="message">&nbsp;</p></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="translatorsDiv">
+		<table id="translatorsTable">
+			<tr>
+				<th>Language</th>
+				<th width="100%">Name</th>
+				<th>Id</th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</table>
+	</div>
+
+	<div id="footer">
+		<table style="width: 100%">
+			<tr>
+<!-- 				<td><img src="icons/logo.png" width="75px"></td> -->
+					<td><p>[LOGO HERE]</p></td>
+				<td width="100%"><p>| EMEA &amp; US Translations Rota</p></td>
+				<td align="right"><a id="helpIcon" href="#"><img src="icons/help.png"></a></td>
+			</tr>
+		</table>
+	</div>
+
+	<div id="helpDiv">
+		<hr>
+		<p>
+			<strong>How do I request a translation?</strong>
+		</p>
+		<ol>
+			<li>Step 1</li>
+			<li>Step 2</li>
+			<li>Step 3</li>
+			<li>Step 4</li>
+		</ol>
+		<p>
+			Before logging a translation request, remember to check...
+		</p>
+	</div>
+</body>
+</html>

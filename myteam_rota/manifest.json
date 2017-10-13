@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name":"MyTeam Rota",
+  "description":"MyTeam Rota extension for Google Chrome.",
+  "version":"1.2",
+  "author":"Miguel Sanz",
+  
+  "icons":{
+    "128":"icons/icon_128.png"
+  },
+  "browser_action":{
+    "default_icon":"icons/icon_128.png",
+    "default_title":"MyTeam Rota",
+    "default_popup":"popup.html"
+  },
+  "permissions":["clipboardWrite"],
+  "content_security_policy":"script-src 'self'; object-src 'self'"
+}
